@@ -1,0 +1,844 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+
+}
+
+
+/*HEADER*/
+
+.parent{     
+    width: 100%;
+    
+    background-image: url(/img/DENEME-5.png);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: contain;
+    background-size: cover;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+}
+
+.logo{
+    width: 15%;
+    min-width: 200px;
+    padding-left: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    
+}
+
+.logo a img{
+    min-width: 150px;
+    width: 50%;
+    transition: 2s;
+}
+
+.logo a img:hover{
+    background-color: white;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 1%;
+}
+
+
+
+.socialmedia{
+    display: inline-flex;
+    align-items: center;
+    width: 15%;
+    min-width: 200px;
+}
+
+.socialmedia ul{
+    display: inline-flex;
+    width: 100%;
+    justify-content:space-around;  
+}
+
+.socialmedia ul li{ 
+    list-style-type: none;
+}
+
+.socialmedia ul li a{
+    font-size: 14px;
+    display: inline-flex;  
+    text-decoration: none;
+    color: white; 
+    transition: .45s; 
+}
+
+
+.socialmedia ul li a:hover{
+    transform:translateY(8%);
+    color: #f9004d;
+}
+
+
+
+
+/*
+
+YAZI FONTLARI
+
+font-family: 'Mulish', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Roboto Flex', sans-serif; 
+
+*/
+
+
+.section{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    width: 60%;
+    height:max-content;
+    margin-left: 5%;
+    align-items: center;  
+}
+
+.section p{
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;   
+}
+
+#hello{
+    font-size: 45px;
+    transition: 1s;  
+}
+
+#name{
+    font-size: 75px;
+    font-weight: bold;
+    color: rgb(188, 186, 186);
+    padding-left: 20px;
+    transition: 1s; 
+}
+
+#tittle{
+    font-size: 18px;
+    padding-top: 20px;
+    letter-spacing: 5px;
+    transition: 1s; 
+}
+
+#hello:hover{
+    transform:translateX(10px)
+}
+
+#name:hover{
+    transform:translateX(10px) 
+}
+
+#tittle:hover{
+    transform:translateX(10px)
+}
+
+
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color:#f9004d;
+    border-radius: 10%;
+    transition: 1s;
+}
+
+.buttons a{
+    text-decoration: dashed;
+    color:rgb(255, 255, 255);
+    font-family: 'Mulish', sans-serif;  
+    font-size: small;
+    font-weight: bold;
+}
+
+.buttons:hover{
+    border-top-left-radius: 1%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 1%;
+    transform: translateY(8%);
+}
+
+
+/*NAVIGASION*/
+
+.navigasion{
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    
+}
+
+
+.navleft{
+    width:30%;
+    
+}
+
+.navleft ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navleft ul li{
+    list-style: none;
+}
+
+
+
+
+
+
+.navcenter{
+    width: 40%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.profilphoto{
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    overflow: hidden;
+    background-image: url(/img/profil-photo-1.png);
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    position: absolute;
+    top: -60px;
+    box-shadow:5px 5px 5px #88888868;
+}
+
+
+
+
+
+
+.navright{
+    width:30%;
+}
+
+.navright ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navright ul li{
+    list-style: none;
+    
+}
+
+
+
+.navigasion a {
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    color: black;
+    font-weight:bold ;
+    --b: 0.1em;
+    --c: #f9004d;
+    color:#000000;
+    padding-block: var(--b);
+    background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.navigasion  a:hover {
+    color: #f9004d;
+    --_p: 100%;
+    --_s: .3s;
+}
+
+
+
+
+/* ABOUT (WHO AM I*/
+
+.about{
+    width: 100%;
+    display: flex;
+    background-color: #000000;
+    font-family: 'Mulish', sans-serif;
+    align-items: center;
+    
+}
+
+.about_photo{
+    width:40%;
+}
+
+.about_photo img{
+    width: 100%;
+}
+
+.about_comment{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    padding-left: 10%;
+}
+
+.about_comment p{
+    transition: all 1s;
+}
+
+.about_comment p:hover{
+    transform:translateX(10px) 
+}
+
+.about_comment h3{
+    padding-bottom: 30px;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.about_comment h3:hover{
+    transform:translateX(10px) 
+}
+
+.about_comment span{
+    color: #f9004d;
+}
+
+
+
+/*MY SERVİCES*/
+
+.service{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Mulish', sans-serif;
+    background-color: #181818;
+}
+
+.tittles h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.tittles span{
+    color: #f9004d;
+}
+
+.box{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 400px;
+}
+
+.cart{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #000000;
+    border-radius: 20px;
+    margin: 15px;
+    /* position: relative; */  /*@*/  
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow:5px 5px 5px #000000;
+}
+
+.cart i{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#f9004d;
+
+}
+
+.cart h5{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.pra p{
+    color:rgba(255, 255, 255, 0.8) ;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom:25px;
+
+}
+
+.button{
+    background-color: #f9004d;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-size: 12px;
+    padding: 9px 10px;
+    border-radius: 30px;
+    transition: .8s;
+    
+
+}
+
+
+.button:hover{
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    
+}
+
+
+
+
+/*MY PROJECTS*/
+
+.proje_tittle{
+    display: flex;
+    justify-content: center;
+    background-color:#181818;
+    padding-top: 50px;
+}
+
+.proje_tittle h2{
+    font-size: 30px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+
+.proje_tittle h2 span{
+    color: #f9004d;
+}
+
+.proje{
+    font-family: 'Mulish', sans-serif;
+}
+
+.cards{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-around;
+    background-color: #181818;
+}
+
+
+.card{
+    width: 250px; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:5px 5px 5px #000000;
+    margin-top: 30px;
+    margin-right: 10px;
+
+}
+
+
+.card h3 {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.card h4{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.card h5{
+    padding-top: 20px;
+}
+
+.card p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.butonn{
+    background-color: #f9004d;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 30px;
+    
+    
+}
+
+.butonn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.card_text{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+
+.butonn{
+    color: white;
+    transition: .45s;
+    
+}
+
+.butonn:hover{
+    transform: translateY(5px);
+}
+
+/*kart1*/
+
+.card_one_head{
+    height: 40vh;
+    background-image: url(/img/netflix.png);
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    color:#000000;
+
+}
+
+
+
+/*kart2*/
+
+.card_two_head{
+    height: 40vh;
+    background-image: url(/img/aksan.jpg);
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    color:#000000;
+
+}
+
+
+/*kart3*/
+
+.card_three_head{
+    height: 40vh;
+    background-image: url(/img/trendyol.jpg);
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    color:#000000;
+
+}
+
+/*kart4*/
+
+.card_four_head{
+    height: 40vh;
+    background-image: url(/img/togg.png);
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    color:#000000;
+
+}
+
+
+
+
+
+
+/*CONTACT US*/
+
+.contact-text{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #181818;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+    
+    
+}
+
+.contact-text h4{
+    color: white;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+
+.contact-text h2{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.contact-text span{
+    color: #f9004d;
+}
+
+.contact-text p{
+    color: white;
+    margin-bottom: 30px;
+
+}
+
+.contact{
+    background: #181818;
+    padding-top: 30px;
+    font-family: 'Mulish', sans-serif;
+    padding-bottom: 50px;
+}
+
+
+
+.listleft{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.list li{
+    margin-bottom: 12px;
+    list-style-type: none;
+    
+    
+
+}
+
+.list li a{
+    color: rgba(255, 255, 255, 0.752);
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .45s ease;
+
+}
+
+.list li a:hover{
+    color: white;
+
+}
+
+
+
+
+.contact-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-icons i{
+    height: 45px;
+    width: 45px;
+    color: white;
+    font-size: 22px; 
+    transition: all .45s ease;
+
+
+}
+
+
+.contact-icons i:hover{
+    color: #f9004d;
+    transform: translateX(5px);
+
+}
+
+
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    background-color:#4e4e4e33;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    
+}
+
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background-color: #f9004d;
+    color: white;
+    width: 160px;
+    transition: .45s;
+}
+
+.contact-form .submit:hover{
+    transform: scale(1.1);
+
+}
+
+
+
+/*MEDIA SCREEN*/
+
+@media screen and (max-width: 768px) {
+    
+    .logo{
+        display:none;
+    }
+
+    
+    
+    .navigasion{
+        display: block;
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+    }
+
+    .navcenter{
+        display: none;
+    }
+    .navigasion ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+        
+
+    }
+
+    .navleft{
+        width: 100%;
+        padding-top: 20px;
+        
+    }
+
+    .navleft li a i{
+        color: white;
+    }
+
+
+    .navright{
+    width: 100%;
+    }
+
+    .navigasion a{
+        display: block;
+        color: white;
+        transition: .45s;
+        font-size: 22px;
+    }
+
+    .navigasion a:hover{
+        background-color: #f9004d;
+        color: white;
+        transform: translateX(3px);
+
+    }
+    .navigasion li{
+        padding-bottom: 20px;
+    }
+
+.about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: block;
+}
+
+.about_photo{
+    width: 80%;
+    margin: auto;
+
+}
+
+.about_comment{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    
+}
+
+.cart{
+    width: 300px;
+}
+
+
+.cards{
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.card{
+    width: 250px;
+}
+
+
+.contact-form{
+    
+    
+    max-width: 90%;
+    margin: auto;
+
+}
+
+
+}
+
